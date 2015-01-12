@@ -229,7 +229,6 @@ HAML
 Rails
 -----
 
-* Avoid `member` and `collection` routes.
 * Use private instead of protected when defining controller methods.
 * Name date columns with `_on` suffixes.
 * Name datetime columns with `_at` suffixes.
@@ -241,7 +240,7 @@ Rails
 * Order i18n translations alphabetically by key name.
 * Order model contents: constants, macros, public methods, private methods.
 * Put application-wide partials in the [`app/views/application`] directory.
-* Use `def self.method`, not the `scope :method` DSL.
+* Prefer `scope :method` DSL to `def self.method` for query methods.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
 * Use `link_to` for GET requests, and `button_to` for other HTTP verbs.
 
@@ -319,7 +318,6 @@ Testing
 * Order factory attributes: implicit attributes, explicit attributes,
   child factory definitions. Each section's attributes are alphabetical.
 * Order factory definitions alphabetically by factory name.
-* Use one factories.rb file per project.
 
 #### Unit Tests
 
