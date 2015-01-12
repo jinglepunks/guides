@@ -214,6 +214,18 @@ HTML
 
 * Prefer double quotes for attributes.
 
+HAML
+----
+
+* Prefer double quotes for attributes.
+* Use ruby 1.9 style hashes for attributes.
+* Prefer nested hashes to `-` in attribute names.
+* Use a space after `=` and `-` when inlining ruby.
+* Use [precede, succeed, and surround].
+
+[precede, succeed, and surround]: http://haml.info/docs/yardoc/file.REFERENCE.html#helper-methods
+
+
 Rails
 -----
 
