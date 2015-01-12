@@ -3,6 +3,13 @@ Style
 
 A guide for programming in style.
 
+Please consider using linters to automatically check the styles covered here.
+There are plugins for [vim] and [Sublime] that make it super easy to know
+if there's a line not following the styleguide when saving the file.
+
+[vim]: https://github.com/scrooloose/syntastic
+[Sublime]: https://github.com/SublimeLinter/SublimeLinter3
+
 Git
 ---
 
