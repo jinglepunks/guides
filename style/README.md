@@ -165,6 +165,9 @@ Ruby
 
 [Sample](samples/ruby.rb)
 
+* Don't use `self` explicitly anywhere except class methods (`def self.method`)
+  and assignments (`self.attribute =`).
+* Don't use spaces after required keyword arguments. [Example][required kwargs]
 * Avoid conditional modifiers (lines that end with conditionals).
 * Avoid multiple assignments per line (`one, two = 1, 2`).
 * Avoid organizational comments (`# Validations`).
@@ -173,12 +176,10 @@ Ruby
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Avoid bang (!) method names. Prefer descriptive names.
-* Don't use `self` explicitly anywhere except class methods (`def self.method`)
-  and assignments (`self.attribute =`).
 * Prefer `detect` over `find`.
 * Prefer `select` over `find_all`.
 * Prefer `map` over `collect`.
-* Prefer `reduce` over `inject`.
+* Prefer `inject` over `reduce`.
 * Prefer double quotes for strings.
 * Prefer `&&` and `||` over `and` and `or`.
 * Prefer `!` over `not`.
@@ -192,7 +193,6 @@ Ruby
   methods, `SCREAMING_SNAKE_CASE` for constants.
 * Use `def self.method`, not `def Class.method` or `class << self`.
 * Use `def` with parentheses when there are arguments.
-* Don't use spaces after required keyword arguments. [Example][required kwargs]
 * Use `each`, not `for`, for iteration.
 * Use heredocs for multi-line strings.
 * Prefer `protected` over `private` for non-public `attr_reader`s, `attr_writer`s,
