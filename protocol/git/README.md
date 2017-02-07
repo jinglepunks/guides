@@ -97,7 +97,7 @@ Force push your branch. This allows GitHub to automatically close your pull
 request and mark it as merged when your commit(s) are pushed to master. It also
  makes it possible to [find the pull request] that brought in your changes.
 
-    git push --force origin <branch-name>
+    git push --force-with-lease origin <branch-name>
 
 View a list of new commits. View changed files. Merge branch into master.
 
@@ -105,7 +105,7 @@ View a list of new commits. View changed files. Merge branch into master.
     git diff --stat origin/master
     git checkout master
     git merge <branch-name> --ff-only
-    git push
+    git push origin master
 
 Delete your remote feature branch.
 
